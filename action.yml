@@ -3,8 +3,8 @@ description: 'Setup dotenvx by installing, downloading, and adding it to the pat
 runs:
   using: 'composite'
   steps:
-    - name: Run Install Script
+    - name: Install dotenvx
       run: |
-        echo "Begin to download dotenvx"
+        curl --proto '=https' --tlsv1.2 -LsSf https://github.com/linux-china/dotenvx-rs/releases/download/v0.2.1/dotenvx-rs-installer.sh | bash
         echo "::add-path::$HOME/.cargo/bin"
       shell: bash
