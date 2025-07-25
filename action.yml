@@ -1,0 +1,10 @@
+name: 'Setup Dotenvx'
+description: 'Setup dotenvx by installing, downloading, and adding it to the path'
+runs:
+  using: 'composite'
+  steps:
+    - name: Run Install Script
+      run: |
+        echo "Begin to download dotenvx"
+        echo "::add-path::$HOME/.cargo/bin"
+      shell: bash
