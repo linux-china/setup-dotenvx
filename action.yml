@@ -5,5 +5,5 @@ runs:
   steps:
     - name: Install dotenvx
       run: |
-        curl --proto '=https' --tlsv1.2 -LsSf https://github.com/linux-china/dotenvx-rs/releases/download/v0.4.2/dotenvx-rs-installer.sh | bash
+        curl --proto '=https' --tlsv1.2 -LsSf https://github.com/linux-china/dotenvx-rs/releases/download/v0.4.3/dotenvx-rs-installer.sh | bash
       shell: bash
